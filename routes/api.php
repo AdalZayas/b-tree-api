@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/v1/b-trees', 'App\Http\Controllers\BTreeController@index');
-Route::post('/v1/b-trees/heigth', 'App\Http\Controllers\BTreeController@heigth');
+Route::post('/v1/b-trees/height', 'App\Http\Controllers\BTreeController@heigth');
+Route::post('/v1/b-trees/neighbors', 'App\Http\Controllers\BTreeController@neighbors');
+Route::post('/v1/b-trees/bfs', 'App\Http\Controllers\BTreeController@bfs');
